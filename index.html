@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0a0a0a" />
+    <title>Bruno Clay Construction &amp; Management</title>
+    <link rel="icon" href="/bcm-logo.png" />
+    <style>
+      :root {
+        --bg: #09090b;
+        --panel: #18181b;
+        --panel-hover: #27272a;
+        --border: #27272a;
+        --border-hover: #3f3f46;
+        --text: #fafafa;
+        --text-dim: #a1a1aa;
+        --text-faint: #71717a;
+        --accent: #60a5fa;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family:
+          ui-sans-serif,
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          "Helvetica Neue",
+          Arial,
+          sans-serif;
+        min-height: 100vh;
+        -webkit-font-smoothing: antialiased;
+      }
+      .page {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 48px 24px;
+      }
+      .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 56px;
+      }
+      .logo {
+        height: 64px;
+        width: auto;
+        object-fit: contain;
+      }
+      .tagline {
+        color: var(--text-dim);
+        font-size: 14px;
+        letter-spacing: 0.04em;
+      }
+      .grid {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr;
+        width: 100%;
+        max-width: 1100px;
+      }
+      @media (min-width: 720px) {
+        .grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+      .card {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        padding: 28px 24px;
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        text-decoration: none;
+        color: var(--text);
+        transition:
+          background 120ms ease,
+          border-color 120ms ease,
+          transform 120ms ease;
+      }
+      .card:hover,
+      .card:focus-visible {
+        background: var(--panel-hover);
+        border-color: var(--border-hover);
+        outline: none;
+      }
+      .card:focus-visible {
+        border-color: var(--accent);
+      }
+      .card .icon {
+        width: 40px;
+        height: 40px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        background: rgba(96, 165, 250, 0.12);
+        border: 1px solid rgba(96, 165, 250, 0.25);
+        color: var(--accent);
+      }
+      .card .icon svg {
+        width: 20px;
+        height: 20px;
+      }
+      .card h2 {
+        font-size: 18px;
+        font-weight: 600;
+        margin: 0;
+      }
+      .card p {
+        font-size: 13px;
+        color: var(--text-dim);
+        margin: 0;
+        line-height: 1.5;
+      }
+      .card .url {
+        font-size: 12px;
+        color: var(--text-faint);
+        font-family:
+          ui-monospace, SFMono-Regular, Menlo, Monaco, "Cascadia Mono",
+          monospace;
+        margin-top: auto;
+        padding-top: 8px;
+      }
+      footer {
+        margin-top: 64px;
+        color: var(--text-faint);
+        font-size: 11px;
+        letter-spacing: 0.05em;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <header class="header">
+        <img class="logo" src="/bcm-logo.png" alt="Bruno Clay Construction &amp; Management" />
+        <p class="tagline">Project Operations</p>
+      </header>
+
+      <div class="grid">
+        <a class="card" href="https://bcmdashboard.thejumpstreet.com">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="20" x2="21" y2="20"></line>
+              <rect x="6" y="10" width="3" height="10"></rect>
+              <rect x="11" y="6" width="3" height="14"></rect>
+              <rect x="16" y="13" width="3" height="7"></rect>
+            </svg>
+          </span>
+          <h2>Dashboard</h2>
+          <p>Project HQ for owners and PMs. Schedule, budget, photos, contacts, messages, and more.</p>
+          <span class="url">bcmdashboard.thejumpstreet.com</span>
+        </a>
+
+        <a class="card" href="https://bcmmobile.thejumpstreet.com">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="6" y="2" width="12" height="20" rx="2" ry="2"></rect>
+              <line x1="12" y1="18" x2="12.01" y2="18"></line>
+            </svg>
+          </span>
+          <h2>Mobile</h2>
+          <p>Field companion for site Supers. Daily logs, incident reports, photos, and field tasks.</p>
+          <span class="url">bcmmobile.thejumpstreet.com</span>
+        </a>
+
+        <a class="card" href="https://bcmplans.thejumpstreet.com">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="9" y1="13" x2="15" y2="13"></line>
+              <line x1="9" y1="17" x2="15" y2="17"></line>
+            </svg>
+          </span>
+          <h2>Plans &amp; Permits</h2>
+          <p>Drawing sets, RFIs, submittals, and permit tracking. AI-assisted plan reading.</p>
+          <span class="url">bcmplans.thejumpstreet.com</span>
+        </a>
+      </div>
+
+      <footer>BRUNO CLAY CONSTRUCTION &amp; MANAGEMENT</footer>
+    </main>
+  </body>
+</html>
