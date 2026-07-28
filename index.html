@@ -138,9 +138,22 @@
       }
       footer {
         margin-top: 64px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
         color: var(--text-faint);
         font-size: 11px;
         letter-spacing: 0.05em;
+        text-align: center;
+      }
+      footer a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+      footer a:hover,
+      footer a:focus-visible {
+        text-decoration: underline;
       }
     </style>
   </head>
@@ -193,7 +206,11 @@
         </a>
       </div>
 
-      <footer>BRUNO CLAY CONSTRUCTION &amp; MANAGEMENT</footer>
+      <footer>
+        BRUNO CLAY CONSTRUCTION &amp; MANAGEMENT
+        <span>&copy; 2026 BCM &middot; Built with And Done</span>
+        <a href="https://desktop.anddone.ai">Business Dashboard</a>
+      </footer>
     </main>
   </body>
 </html>
